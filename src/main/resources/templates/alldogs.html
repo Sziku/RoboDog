@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Dogs</title>
+</head>
+<body>
+  <p>Dogge</p>
+<div th:each="dog:${dogs}">
+    <p th:text="${dog.name} + ' ' + ${dog.age} + ' ' + ${dog.breed}"> </p>
+</div>
+
+</body>
+</html>
