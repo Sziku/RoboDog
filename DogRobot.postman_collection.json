@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "d2dc8c35-15f5-49e0-ba71-7b02454b6c9c",
+		"name": "DogRobot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24649607"
+	},
+	"item": [
+		{
+			"name": "alldogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/dog/alldogslist",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dog",
+						"alldogslist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "radnomdog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/dog/randomdog",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dog",
+						"randomdog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adddog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"age\" : \"100\",\r\n    \"name\" : \"God\",\r\n    \"breed\" : \"KURI\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dog/adddog",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dog",
+						"adddog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatedog",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"age\" : \"13\",\r\n    \"name\" : \"teszt\",\r\n    \"breed\" : \"CUR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dog/updatedog",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dog",
+						"updatedog"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
